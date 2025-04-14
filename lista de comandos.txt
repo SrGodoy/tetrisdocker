@@ -1,0 +1,14 @@
+Reconstrua a imagem corretamente:
+
+docker build --no-cache -t ubuntu-tetris .
+
+Execute com verificação de caminho:
+
+docker run -it ubuntu-tetris which vitetris
+
+Isso deve retornar:
+/usr/games/vitetris
+
+Execute o jogo finalmente:
+
+docker run -it ubuntu-tetris
